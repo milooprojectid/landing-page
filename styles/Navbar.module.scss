@@ -1,0 +1,38 @@
+.navbar {
+  height: 80px;
+}
+.navContent {
+  z-index: 99;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    z-index: 99;
+  }
+  .navList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    .navListItem {
+      box-sizing: border-box;
+      // margin: 0 0.5rem;
+      padding: 0 1rem;
+      z-index: 99;
+      .navListLink {
+        font-size: 1rem;
+        color: #000000;
+        text-decoration: none;
+        color: #ffffff;
+        &.donate {
+          background-color: #ffb400;
+          padding: 5px 1rem;
+          border-radius: 20px;
+          color: #ffffff;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

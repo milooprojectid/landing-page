@@ -1,0 +1,131 @@
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+$primary: #eb3600;
+$secondary: #ffb400;
+body {
+  font-size: 16px;
+}
+
+.homePage {
+  position: relative;
+  .bg-hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+// ===>Hero
+.hero {
+  position: relative;
+  margin-bottom: 8rem;
+  z-index: 99;
+  .hero-content {
+    margin-top: 2.8rem;
+    h2 {
+      font-size: 4.3rem;
+      font-weight: 700;
+      color: $primary;
+      z-index: 99;
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 1.8rem;
+      color: $primary;
+      margin: 1.8rem 0;
+    }
+    .btn-hero {
+      margin-top: 2.1rem;
+      border-radius: 30px;
+      padding: 5px 2.2rem;
+      &.btn-hero-primary {
+        background-color: $secondary;
+        color: #ffffff;
+      }
+      &.btn-hero-secondary {
+        color: $secondary;
+        border: 1px solid $secondary;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+// ===> About
+.about {
+  margin-top: 3rem;
+  .about-konten {
+    margin-top: 2rem;
+    .title-about {
+      h5 {
+        color: $primary;
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-size: 2.3rem;
+        color: #4f4f4f;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #4f4f4f;
+      }
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.2rem;
+    }
+  }
+}
