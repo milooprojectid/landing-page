@@ -47,6 +47,7 @@ $primary: #eb3600;
 $secondary: #ffb400;
 body {
   font-size: 16px;
+  font-family: "montserrat";
 }
 
 .homePage {
@@ -62,6 +63,47 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+  }
+}
+
+// ===>Navbar
+.navContent {
+  z-index: 99;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    z-index: 99;
+  }
+  .btnNavbar {
+    z-index: 99;
+  }
+  .navList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    z-index: 99;
+    .navListItem {
+      box-sizing: border-box;
+      // margin: 0 0.5rem;
+      padding: 0 1rem;
+      z-index: 99;
+      .navListLink {
+        font-size: 1rem;
+        color: #000000;
+        text-decoration: none;
+        color: #ffffff;
+        &.donate {
+          background-color: #ffb400;
+          padding: 5px 1rem;
+          border-radius: 20px;
+          color: #ffffff;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
 
@@ -111,21 +153,75 @@ body {
       h5 {
         color: $primary;
         font-size: 1.2rem;
+        text-transform: uppercase;
+        margin: 0;
       }
       h2 {
-        font-size: 2.3rem;
+        font-size: 2.8rem;
         color: #4f4f4f;
+        font-weight: 700;
+        margin: 0;
       }
       p {
         font-size: 1.5rem;
         font-weight: 400;
         color: #4f4f4f;
+        margin: 0;
       }
     }
     p {
+      margin-top: 2.3rem;
       font-size: 1rem;
       font-weight: 300;
-      line-height: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .btnNavbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .homeNav {
+    // overflow: scroll;
+    height: 100vh;
+    position: relative;
+    .bg-left {
+      display: none;
+    }
+  }
+  .navContent {
+    .navList {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 80px);
+      top: 80px;
+      left: -100%;
+      z-index: 999;
+      opacity: 1;
+      transition: all 0.5s ease;
+      &.navListActive {
+        background-color: #4f4f4f;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5 ease;
+      }
+    }
+    .btnNavbar {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .homePage {
+    .bg-left {
+      display: none;
     }
   }
 }

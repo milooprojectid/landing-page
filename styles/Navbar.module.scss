@@ -9,6 +9,9 @@
   img {
     z-index: 99;
   }
+  .btnNavbar {
+    z-index: 99;
+  }
   .navList {
     display: flex;
     list-style-type: none;
@@ -33,6 +36,23 @@
           font-weight: 500;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .btnNavbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .navContent {
+    .navList {
+      display: none;
+    }
+    .btnNavbar {
+      display: block;
     }
   }
 }

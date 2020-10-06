@@ -1,39 +1,49 @@
 import Link from "next/link";
-import Style from "../styles/Navbar.module.scss";
+// import Style from "../styles/Navbar.module.scss";
+import React, { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const [active, setActive] = useState(true);
+  const handleShow = () => {
+    setActive(!active);
+    props.handleNavbar(active);
+  };
+
   return (
-    <nav className={`${Style.navContent} container`}>
+    <nav className="container navContent">
       <img src="/Logo.svg" alt="" />
-      <ul className={Style.navList}>
-        <li className={Style.navListItem}>
+      <button className="btnNavbar" onClick={handleShow}>
+        navbar
+      </button>
+      <ul className={`navList ${active && "navListActive"}`}>
+        <li className="navListItem">
           <Link href="/">
-            <a className={Style.navListLink}>About</a>
+            <a className="navListLink">About</a>
           </Link>
         </li>
-        <li className={Style.navListItem}>
+        <li className="navListItem">
           <Link href="/">
-            <a className={Style.navListLink}>How</a>
+            <a className="navListLink">How</a>
           </Link>
         </li>
-        <li className={Style.navListItem}>
+        <li className="navListItem">
           <Link href="/">
-            <a className={Style.navListLink}>Our Activity</a>
+            <a className="navListLink">Our Activity</a>
           </Link>
         </li>
-        <li className={Style.navListItem}>
+        <li className="navListItem">
           <Link href="/">
-            <a className={Style.navListLink}>Product</a>
+            <a className="navListLink">Product</a>
           </Link>
         </li>
-        <li className={Style.navListItem}>
+        <li className="navListItem">
           <Link href="/">
-            <a className={Style.navListLink}>Contact</a>
+            <a className="navListLink">Contact</a>
           </Link>
         </li>
-        <li className={Style.navListItem}>
+        <li className="navListItem">
           <Link href="/">
-            <a className={`${Style.navListLink} ${Style.donate}`}>Donation</a>
+            <a className="navListLink donate">Donation</a>
           </Link>
         </li>
       </ul>
