@@ -4,10 +4,10 @@ export default function About() {
   return (
     <section className="container about">
       <div className="row justify-content-center">
-        <div className="col-5">
+        <div className="col-10 col-md-6 col-lg-5 img-wrapper">
           <img src="/about.png" alt="" />
         </div>
-        <div className="col-5">
+        <div className="col-10 col-md-6 col-lg-5">
           <div className="about-konten">
             <div className="title-about">
               <h5>About Us</h5>

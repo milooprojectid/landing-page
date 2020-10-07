@@ -67,6 +67,10 @@ body {
 }
 
 // ===>Navbar
+.nav {
+  background-color: transparent;
+  transition: background-color 1s ease;
+}
 .navContent {
   z-index: 99;
   height: 80px;
@@ -184,16 +188,29 @@ body {
   }
 }
 
-@media screen and (max-width: 660px) {
-  .homeNav {
-    // overflow: scroll;
-    height: 100vh;
-    position: relative;
+@media screen and (max-width: 990px) {
+  .homePage {
     .bg-left {
       display: none;
     }
+    .bg-hero {
+      z-index: 1;
+    }
+  }
+  nav {
+    background-color: #ffffff;
+    z-index: 99;
+    position: relative;
+    transition: background-color 0.5s ease;
+  }
+  .homeNav {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
   }
   .navContent {
+    z-index: 999;
+    // padding-top: 1rem;
     .navList {
       display: flex;
       flex-direction: column;
@@ -211,17 +228,97 @@ body {
         opacity: 1;
         transition: all 0.5 ease;
       }
+      .navListItem {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+        .navListLink {
+          display: inline-block;
+          width: 100%;
+          padding: 1rem 0;
+          margin: auto 0;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: #6b6b6b;
+          }
+          &.donate {
+            width: 40%;
+            padding: 0.4rem 0;
+            &:hover {
+              background-color: #ffbd23;
+            }
+          }
+        }
+      }
     }
     .btnNavbar {
       display: block;
+      outline: none;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+  .hero {
+    position: relative;
+    z-index: 10;
+    .hero-content {
+      h2,
+      p {
+        color: #ffffff;
+      }
+      h2 {
+        font-size: 3.3rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    .row {
+      justify-content: start;
+    }
+  }
+  .about {
+    .row {
     }
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
+  .about {
+    margin-top: 14rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
   .homePage {
     .bg-left {
       display: none;
+    }
+  }
+
+  .hero {
+    .hero-content {
+      text-align: center;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .about {
+    margin-top: 4rem;
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      img {
+        transform: scale(0.8);
+      }
+    }
+    .about-konten {
+      text-align: center;
     }
   }
 }

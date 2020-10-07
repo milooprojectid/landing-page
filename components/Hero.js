@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container">
         <section className="hero">
           <div className="row">
-            <div className="col-4">
+            <div className="col-md-6 col-sm-12 col-12 col-lg-4">
               <Fade left>
                 <div className="hero-content">
                   <h2>Miloo Project</h2>
