@@ -65,6 +65,13 @@ body {
     z-index: 1;
   }
 }
+// ===>Section Example
+.section-example {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 // ===>Navbar
 .nav {
@@ -182,7 +189,126 @@ body {
   }
 }
 
-@media screen and (max-width: 1536px) {
+// =====> Background-Section
+.background-content {
+  margin-top: 2rem;
+  margin-bottom: 2.2rem;
+
+  .showCard {
+    display: block;
+  }
+  .hideCard {
+    display: none;
+  }
+  .title-bg {
+    text-align: center;
+    margin-bottom: 1.9rem;
+    h5 {
+      font-size: 1.3rem;
+      color: $primary;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 3.1rem;
+      color: #4f4f4f;
+      font-weight: 700;
+    }
+  }
+  .card-background {
+    height: 21.88rem;
+    border-radius: 1.2rem;
+    box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, 0.15);
+    padding: 1.4rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    transition: all 0.3s ease;
+    position: relative;
+    &.active-card {
+      flex-direction: row;
+      background-image: url("../../public/bg-card-cover.png");
+      background-repeat: no-repeat;
+      background-color: #ff511d;
+      color: #ffffff;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      h3 {
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+      }
+      .border-bg {
+        opacity: 0;
+        width: 50%;
+      }
+
+      // Carousel
+
+      .rec-carousel-wrapper {
+        .rec-pagination {
+          .rec-dot {
+            background-color: #ffedc3;
+            box-shadow: none;
+            outline: none;
+            &.rec-dot_active {
+              background-color: #ffbd23;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        border: none;
+        transform: none;
+      }
+    }
+
+    h3 {
+      font-size: 3.1rem;
+      color: #4f4f4f;
+      font-weight: 700;
+    }
+    .border-bg {
+      width: 20%;
+      height: 5px;
+      background-color: $secondary;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 1rem 0 1.2rem;
+      color: #434c54;
+      text-align: center;
+    }
+    .btn-bg {
+      background-color: $secondary;
+      color: #ffffff;
+      padding: 0.5rem 1.7rem;
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      margin-bottom: 1.9rem;
+      &:hover {
+        background-color: #ffbf2b;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: none;
+      border: 1px solid $secondary;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
   .btnNavbar {
     display: none;
   }
@@ -278,8 +404,15 @@ body {
       justify-content: start;
     }
   }
-  .about {
-    .row {
+  // Background-section
+  .background-content {
+    .card-background {
+      h3 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
     }
   }
 }
@@ -287,6 +420,17 @@ body {
 @media screen and (max-width: 768px) {
   .about {
     margin-top: 14rem;
+  }
+
+  // bacground-section
+  .background-content {
+    .hideCard {
+      display: block;
+    }
+    .card-background {
+      margin-bottom: 1.8rem;
+      height: 18rem;
+    }
   }
 }
 
