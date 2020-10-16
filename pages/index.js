@@ -10,6 +10,7 @@ import { GrFormClose } from "react-icons/gr";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Background from "../components/Background";
+import Work from "../components/Work";
 
 export default function Home() {
   const [active, setActive] = useState(false);
@@ -67,6 +68,7 @@ export default function Home() {
       <Hero />
       <About />
       <Background />
+      <Work />
     </section>
   );
 }

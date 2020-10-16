@@ -1,0 +1,127 @@
+{
+  "background": [
+    {
+      "id": 1,
+      "name": "Hustler",
+      "image": "/work-1.png",
+      "item": [
+        {
+          "id": 1,
+          "name": "managing",
+          "desc": " Skill people management mencakup berbagai hal seperti komunikasi, kepemimpinan, delegasi, dan lain-lain. Agar lebih jelas, berikut delapan skill people management yang harus kamu kuasai sebagai seorang pemimpin atau manajer. "
+        },
+        {
+          "id": 2,
+          "name": "data analytics",
+          "desc": "Tugas seorang data analyst adalah mencari insight untuk memajukan bisnis dari berbagai aspek, lalu kemudian diberikan pada data engineer. Data analyst juga bertanggungjawab untuk mengolah bahan yang diberikan untuk membuat eksperimen dan menentukan strategi bisnis lanjutan. "
+        },
+        {
+          "id": 3,
+          "name": "marketing",
+          "desc": "Marketing adalah  kegiatan untuk memenuhi beragam kebutuhan serta kepuasan konsumen dengan melakukan beragam cara. Mulai dari membuat produk, tempat penjualan, menentukan harga, serta melakukan promosi produk."
+        },
+        {
+          "id": 4,
+          "name": "networking",
+          "desc": "Networking dalam bisnis adalah kemampuan untuk memperluas koneksi, relasi dan sinergi sambil mempertahankan nilai-nilai kepentingan bersama dan komitmen untuk kesuksesan bersama"
+        },
+        {
+          "id": 5,
+          "name": "communication",
+          "desc": "Keterampilan komunikasi adalah keahlian atau kecakapan dalam melakukan komunikasi secara efektif, menyenangkan, menarik, dan berdampak."
+        },
+        {
+          "id": 6,
+          "name": "bussiness development",
+          "desc": "Business development dikenal sebagian besar orang sebagai salah satu bagian dari pemasaran, sebagian lagi mengenalnya sebagai pengembangan produk, dan sisanya mengenalnya sebagai tim yang merencanakan strategi perusahaan"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "hacker",
+      "image": "/work-2.png",
+      "item": [
+        {
+          "id": 1,
+          "name": "data science",
+          "desc": " Data science sendiri lebih kepada penggalian atau analisis prediktif suatu data untuk difilter dan ditemukan data yang benar agar menghasilkan suatu data yang akurat sesuai dengan data yang sebenarnya. "
+        },
+        {
+          "id": 2,
+          "name": "coding",
+          "desc": "Coding adalah menulis sekumpulan code sesuai dengan aturan penulisan (syntax) tertentu dari bahasa pemrograman yang digunakan. Bahasa pemrograman ini sendiri ada bermacam-macam."
+        },
+        {
+          "id": 3,
+          "name": "product development",
+          "desc": "product development adalah serangkaian langkah yang mencakup pembuatan konsep, desain, pengembangan, dan pemasaran produk yang baru dibuat atau baru melakukan rebranding"
+        },
+        {
+          "id": 4,
+          "name": "artificial intelligence",
+          "desc": "Artificial Intelligence atau kecerdasan buatan menjadi penggerak revolusi industri 4.0 yang menjanjikan banyak kemudahan bagi sektor pemerintah maupun industri.Internet of Things (IoT) dan big data contohnya dimana AI dapat diimplementasikan."
+        },
+        {
+          "id": 5,
+          "name": "machine learning",
+          "desc": "Machine learning adalah pendekatan kecerdasan buatan (Artificial Intelligence (AI)) yang berfokus pada pembuatan mesin yang dapat belajar tanpa diprogram secara eksplisit. Belajar adalah bagian yang sangat penting dari apa yang membuat kita menjadi manusia"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "hipster",
+      "image": "/work-3.png",
+      "item": [
+        {
+          "id": 1,
+          "name": "designing",
+          "desc": "Desain adalah suatu perencanaan atau perancangan yang dilakukan sebelum pembuatan suatu objek, sistem, komponen, atau struktur. "
+        },
+        {
+          "id": 2,
+          "name": "user experience",
+          "desc": "User experience adalah bagaimana pengalaman pengguna dalam berinteraksi/menggunakan produk digital Anda. Pengalaman ini dilihat dari betapa mudahnya pengguna untuk mendapatkan apa yang mereka inginkan dari produk tersebut."
+        },
+        {
+          "id": 3,
+          "name": "user interface",
+          "desc": "User interface adalah bagian visual dari website, aplikasi software atau device hardware yang memastikan bagaimana seorang user berinteraksi dengan aplikasi atau website tersebut serta bagaimana informasi ditampilan di layarnya. "
+        },
+        {
+          "id": 4,
+          "name": "design sprint",
+          "desc": "Design sprint adalah suatu metode untuk build product concept dan prototype dalam waktu 5 hari dimana memiliki 5 tahapan yang sangat komunikatif dan interaktif untuk mengeluarkan semua ide, inspirasi, masalah yang ada, solusi yang kemudian diwujudkan dalam prototype yang harus dan di cross check ke calon pengguna."
+        },
+        {
+          "id": 5,
+          "name": "costumer journey",
+          "desc": "customer journey adalah perjalanan konsumen saat berinteraksi dengan brand Anda. Mulai dari saat konsumen pertama kali mengenal brand Anda, melihat-lihat produk yang dijual, melakukan pembelian, hingga apa yang ia lakukan setelah transaksi selesai. "
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "hound",
+      "image": "/work-4.png",
+      "item": [
+        {
+          "id": 1,
+          "name": "primary",
+          "desc": "Penelitian primer biasanya lebih memakan waktu dan memiliki biaya terkait yang lebih tinggi, sehingga merupakan kepentingan terbaik organisasi untuk hanya melakukan penelitian primer setelah kesenjangan dalam penelitian sekunder yang tersedia telah diidentifikasi."
+        },
+        {
+          "id": 2,
+          "name": "secondary research",
+          "desc": "Melakukan penelitian sekunder mirip dengan penelitian yang dilakukan siswa selama sekolah dasar. Jawaban atas pertanyaan penelitian sudah tersedia secara online, dalam database akademis, berita, buku terbitan, jurnal, dll — pekerjaannya adalah mengarungi informasi yang sudah tersedia dan menemukan data yang sesuai dengan proyek penelitian tertentu."
+        },
+        {
+          "id": 3,
+          "name": "analysis",
+          "desc": "Analisis merupakan suatu kegiatan berfikir untuk menguraikan suatu keseluruhan menjadi komponen sehingga dapat mengenal tanda-tanda komponen, hubungan satu sama lain dan fungsi masing-masing dalam satu keseluruhan yang terpadu."
+        }
+      ]
+    }
+  ]
+}
