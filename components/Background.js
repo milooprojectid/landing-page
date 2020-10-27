@@ -3,10 +3,6 @@ import React, { useState } from "react";
 // React Slick
 import Carousel from "react-elastic-carousel";
 
-const paginationCustom = () => {
-  return <div className="pagination" />;
-};
-
 export default function Background() {
   const [activeClass, setActiveClass] = useState(false);
   const [idCard, setIdCard] = useState(0);
@@ -17,14 +13,6 @@ export default function Background() {
   };
   const handleClose = () => {
     setActiveClass(false);
-  };
-
-  const sliderSetting = {
-    dots: true,
-    slideToShow: 1,
-    slideToScroll: 2,
-    inifite: true,
-    arrows: false,
   };
 
   return (

@@ -189,6 +189,155 @@ body {
   }
 }
 
+// =====> Event-Section
+.event-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  .title {
+    font-size: 3rem;
+    color: #4f4f4f;
+    font-weight: 700;
+    text-align: center;
+  }
+  .border {
+    width: 20%;
+    height: 4px;
+    background-color: $primary;
+    margin: auto;
+    border: none;
+  }
+  .card-event-section {
+    position: relative;
+    width: 100%;
+    // overflow: hidden;
+    border-radius: 20px;
+    background: url(../../public/Invoice.png);
+    background-color: #fcf1ed;
+    background-repeat: no-repeat;
+    padding: 1.4rem 1rem;
+    margin-top: 2rem;
+    .card-event {
+      width: 50%;
+      margin-left: auto;
+      .item-carousel {
+        .title-item {
+          font-size: 2.8rem;
+          font-weight: 700;
+          color: $primary;
+        }
+        .desc-event {
+          font-size: 1.5rem;
+          color: #c69688;
+        }
+        .img-collapse-event {
+          display: flex;
+          color: #c69688;
+          font-size: 1.2rem;
+          font-weight: 700;
+          align-items: center;
+          padding: 1rem 0;
+          img {
+            margin-left: 0.8rem;
+            display: block;
+          }
+        }
+      }
+      .rec-carousel-wrapper {
+        .rec-carousel {
+          .rec-arrow {
+            background-color: $primary;
+            color: #ffffff;
+            outline: none;
+            border: none;
+          }
+          .rec-arrow-left {
+            position: absolute;
+            left: -20px;
+          }
+          .rec-arrow-right {
+            position: absolute;
+            right: -20px;
+          }
+        }
+        .rec-pagination {
+          .rec-dot {
+            background-color: #ffbeaa;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            &.rec-dot_active {
+              background-color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// =====> Product-Section
+.product-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  .title {
+    font-size: 3rem;
+    color: #4f4f4f;
+    font-weight: 700;
+  }
+  .border {
+    width: 20%;
+    height: 6px;
+    background-color: $primary;
+  }
+  .wrapper-product {
+    .title-item {
+      font-size: 2.8rem;
+      color: $primary;
+      font-weight: 300;
+      span {
+        font-weight: 700;
+      }
+    }
+    .desc-item {
+      font-size: 1.1rem;
+      color: #1d2e3d;
+      line-height: 1.8rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .button-wrapper {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      .btn-product {
+        padding: 1rem;
+        border-radius: 50px;
+        outline: none;
+        border: 2px solid $primary;
+        background-color: #ffffff;
+        svg {
+          font-size: 1.8rem;
+          color: $primary;
+        }
+        &:hover {
+          background: rgb(235, 54, 0);
+          background: linear-gradient(
+            25deg,
+            rgba(235, 54, 0, 1) 50%,
+            rgba(255, 180, 0, 1) 100%
+          );
+          svg {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
 // =====> Background-Section
 .background-content {
   margin-top: 2rem;
@@ -309,6 +458,23 @@ body {
 }
 
 // ===>Work Section
+.modal-style {
+  .ant-modal-content {
+    border-radius: 20px;
+    padding: 2.1rem 1.4rem;
+    h3 {
+      text-transform: capitalize;
+      font-weight: 700;
+      color: #4f4f4f;
+    }
+    p {
+      line-height: 1.7rem;
+    }
+  }
+  .ant-modal-close {
+    outline: none;
+  }
+}
 .work-section {
   .title-work {
     font-size: 3.1rem;
@@ -328,6 +494,8 @@ body {
     margin-bottom: 1.7rem;
   }
   .work-meta-wrapper {
+    .modal-style {
+    }
     .work-title-item {
       font-size: 2.9rem;
       font-weight: 300;

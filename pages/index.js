@@ -11,6 +11,8 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Background from "../components/Background";
 import Work from "../components/Work";
+import Event from "../components/Event";
+import Product from "../components/Product";
 
 export default function Home() {
   const [active, setActive] = useState(false);
@@ -69,6 +71,8 @@ export default function Home() {
       <About />
       <Background />
       <Work />
+      <Event />
+      <Product />
     </section>
   );
 }
