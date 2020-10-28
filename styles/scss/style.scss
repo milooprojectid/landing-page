@@ -533,6 +533,39 @@ body {
   }
 }
 
+// =====> Footer Section
+footer {
+  border-top: 1px solid #ffedc3;
+  padding-top: 2.3rem;
+}
+.footer-section {
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  .title-footer {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .wrapper-social {
+    margin-top: 1rem;
+    display: flex;
+    height: 100%;
+    .social-item {
+      display: flex;
+      img {
+        margin-right: 1.1rem;
+      }
+      .social-btn {
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 990px) {
   .btnNavbar {
     display: none;
@@ -637,6 +670,26 @@ body {
       }
       p {
         font-size: 0.8rem;
+      }
+    }
+  }
+
+  // Product section
+  .product-section {
+    text-align: center;
+    .border {
+      margin: auto;
+    }
+    .wrapper-product {
+      img {
+        transform: scale(0.8);
+      }
+      .button-wrapper {
+        width: 100%;
+        justify-content: center;
+        .btn-product {
+          margin: 0 1rem;
+        }
       }
     }
   }
