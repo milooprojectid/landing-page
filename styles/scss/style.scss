@@ -566,6 +566,17 @@ footer {
   }
 }
 
+@media screen and (max-width: 1080px) {
+  // Work Section
+  .work-section {
+    .img-wrapper {
+      .img-work {
+        transform: scale(0.7);
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 990px) {
   .btnNavbar {
     display: none;
@@ -708,6 +719,26 @@ footer {
     .card-background {
       margin-bottom: 1.8rem;
       height: 18rem;
+    }
+  }
+
+  // .work-section
+  .work-section {
+    .work-meta-wrapper {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  // Work Section
+  .work-section {
+    .img-wrapper {
+      .img-work {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
