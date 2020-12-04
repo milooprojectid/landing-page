@@ -11,7 +11,7 @@ export default function Product() {
       <div className="border" />
       <div className="wrapper-product">
         <div className="row align-items-center">
-          <div className="col-12 col-md-6 col-lg-6">
+          <div className="col-12 col-md-12 col-lg-6 col-xl-6">
             <h3 className="title-item">
               Milo <span>Chatbot</span>
             </h3>
@@ -34,8 +34,10 @@ export default function Product() {
               </button>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-6">
-            <img src="./product.png" alt="" className="img-cover" />
+          <div className="col-12 col-md-12 col-lg-6 col-xl-6">
+            <div className="img-wrapper">
+              <img src="./product.png" alt="" className="img-cover" />
+            </div>
           </div>
         </div>
       </div>

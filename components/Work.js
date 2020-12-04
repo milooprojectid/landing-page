@@ -26,15 +26,15 @@ export default function Work() {
       {Data.background.map((item, i) => {
         return (
           <div
-            className="row align-items-center"
+            className="row align-items-center justify-content-center"
             style={{ marginTop: "3.5rem" }}
           >
-            <div className="col-6">
+            <div className="col-12 col-xl-6 col-lg-6">
               <div className="img-wrapper">
                 <img src={item.image} alt={item.name} className="img-work" />
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-xl-6 col-lg-6">
               <div className="work-meta-wrapper">
                 <h4 className="work-title-item">
                   The <span>{item.name}</span>
