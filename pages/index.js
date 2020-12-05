@@ -5,6 +5,8 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { GrFormClose } from "react-icons/gr";
 
+import { getData } from "../utils/api";
+
 // Component
 // import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -14,12 +16,15 @@ import Work from "../components/Work";
 import Event from "../components/Event";
 import Product from "../components/Product";
 import Footer from "../components/Footer";
+import Blog from "../components/Blog";
 
-export default function Home() {
+export default function Home({ initialArticle }) {
+  const [data, setData] = useState(initialArticle);
   const [active, setActive] = useState(false);
   const handleShow = () => {
     setActive(!active);
   };
+  console.log(data);
   return (
     <section className={active ? "homePage homeNav" : "homePage"}>
       <Head>
@@ -74,7 +79,13 @@ export default function Home() {
       <Work />
       <Event />
       <Product />
+      <Blog data={data} />
       <Footer />
     </section>
   );
+}
+
+export async function getServerSideProps() {
+  const [initialArticle] = await Promise.all([getData()]);
+  return { props: { initialArticle } };
 }
