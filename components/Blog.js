@@ -1,6 +1,7 @@
 import Carousel from "react-elastic-carousel";
 import React, { useEffect } from "react";
-import ReactHtmlParser, { htmlparser2 } from "react-html-parser";
+import ReactHtmlParser from "react-html-parser";
+import Link from "next/link";
 
 export default function Blog({ data }) {
   const toText = (node) => {
@@ -44,11 +45,30 @@ export default function Blog({ data }) {
                           className="img-cover"
                         />
                       </div>
-                      <h3 className="card-title">{item.title}</h3>
+                      <Link href={item.guid}>
+                        <a
+                          className="card-title"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {item.title}
+                        </a>
+                      </Link>
                       <p className="card-desc">{toText(item.content)}</p>
                     </div>
                     <div className="card-author">
-                      <h5 className="author">{item.author}</h5>
+                      <div className="card-author-profile">
+                        <h5 className="author">{item.author}</h5>
+                      </div>
+                      <Link href={item.guid} passHref>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          className="card-link"
+                        >
+                          See More...
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -58,6 +78,11 @@ export default function Blog({ data }) {
             <h1>Loading...</h1>
           )}
         </div>
+      </div>
+      <div className="show">
+        <button type="button" className="button-show">
+          Show More
+        </button>
       </div>
     </section>
   );
