@@ -848,13 +848,36 @@ footer {
     display: flex;
     justify-content: center;
     .button-show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       border: 0;
       outline: 0;
+      background-color: transparent;
+      transition: all 0.5s linear;
+      &:hover {
+        // display: inline-block;
+        padding: 0 1.2rem;
+        // width: 80px;
+        border-radius: 30px;
+        color: #fff;
+        background-color: $primary;
+        transition: all 0.5s linear;
+      }
+    }
+  }
+  &.show-list {
+    .blog-list {
+      height: 2050px;
+      transition: height 1s ease;
     }
   }
   .blog-list {
+    overflow: hidden;
+    height: 520px;
+    transition: height 0.5s linear;
     .card-blog {
-      width: 100%;
+      width: 350px;
       height: auto;
       overflow: hidden;
       padding: 1.2rem;
